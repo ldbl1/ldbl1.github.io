@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Cómo enfoco un proyecto de automatización",
+    "summary": "Una nota inicial sobre descubrimiento, viabilidad, diseño del proceso y mantenimiento posterior.",
+    "date": "2026-01-15",
+    "tags": [
+      "automatización",
+      "RPA",
+      "procesos"
+    ],
+    "url": "#",
+    "external": false
+  },
+  {
+    "title": "Selenium, Python y robustez en procesos reales",
+    "summary": "Ideas para evitar automatizaciones frágiles cuando dependes de aplicaciones web externas.",
+    "date": "2026-02-10",
+    "tags": [
+      "Python",
+      "Selenium"
+    ],
+    "url": "#",
+    "external": false
+  },
+  {
+    "title": "Power Platform como palanca interna",
+    "summary": "Casos donde Power Automate, SharePoint y Power BI pueden acelerar operaciones sin sobredimensionar soluciones.",
+    "date": "2026-03-05",
+    "tags": [
+      "Power Platform",
+      "Power Automate"
+    ],
+    "url": "#",
+    "external": false
+  }
+]

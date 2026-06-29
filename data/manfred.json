@@ -1,0 +1,533 @@
+{
+  "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.5/schema/schema.json",
+  "settings": {
+    "language": "ES",
+    "MACVersion": "0.5"
+  },
+  "aboutMe": {
+    "profile": {
+      "name": "Lorenzo",
+      "surnames": "del Barrio Leal",
+      "title": "Automation Tech Lead",
+      "description": "Me he dedicado desde que tengo uso de memoria a crear pequeños scripts para automatizar pequeñas tareas con AHK e incluso a hacer alguna trampita en juegos. \n\nCuando me metí al mundo de la informática me dediqué sobre todo a hacer macros en VBA y poco más tarde, con los conocimientos que tenía de Java, hice una migración de un sistema basado en UIPATH a Jidoka. \nMás tarde, cuando Appian compró Jidoka, migramos a AppianRPA. \n\nDesde entonces mi objetivo es siempre trabajar en automatizaciones y me encanta probar nuevas herramientas. \n\nHasta ahora he tenido la oportunidad de trabajar con muchos sistemas de automatización como AppianRPA, con Selenium y Python, AHK, VBA, Google Apps Scripts,  Robocorp y PowerPlatform. \n\nMi trabajo se basa en conseguir que los objetivos se cumplan por parte del equipo para poder llegar a los SLA's impuestos por el cliente. \n\nMi objetivo es seguir creciendo y con el conocimiento que he adquirido y los modelos que creo, poder llegar a ayudar a más personas a modelar procesos funcionales rentables. \n\nMe encanta trabajar con gente nueva y poder ayudar a los que están empezando en este mundo cada vez más grande de la informática.",
+      "location": {
+        "notes": "Autocompleted using Google Maps API (id: ChIJ93Fa7xbuQQ0Ri8m7_R-P0Ws)",
+        "country": "España",
+        "region": "Castilla-La Mancha",
+        "municipality": "El Viso de San Juan"
+      }
+    },
+    "relevantLinks": [
+      {
+        "type": "linkedin",
+        "URL": "https://www.linkedin.com/in/lorenzo-del-barrio-leal/"
+      },
+      {
+        "type": "github",
+        "URL": "https://github.com/ldbl1"
+      }
+    ]
+  },
+  "experience": {
+    "jobs": [
+      {
+        "organization": {
+          "name": "AENOR",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/26/03/05/86c4d749-8ad7-4fb3-90f0-c2adf29d569d_ventajas-n.png",
+            "alt": "ventajas-n.png"
+          },
+          "URL": "https://www.aenor.com/"
+        },
+        "roles": [
+          {
+            "name": "PowerPlatfom Administrator",
+            "startDate": "2026-02-01",
+            "competences": [
+              {
+                "name": "Microsoft Power Automate",
+                "type": "technology"
+              },
+              {
+                "name": "Microsoft Power Plataform",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GETRONICS",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/1512d1ac-3ef3-43eb-9ae4-0c6c1a2777d5_getronics.png",
+            "alt": "getronics.png"
+          },
+          "URL": "https://www.getronics.com/es/"
+        },
+        "roles": [
+          {
+            "name": "Automation Tech Lead",
+            "startDate": "2024-03-01",
+            "finishDate": "2026-02-01",
+            "challenges": [
+              {
+                "description": "Trabajando en la definición y análisis de aplicación para la administración publica basada en la comunicación de eventos críticos para la administración y la ciudadanía.\n\nTambién trabajo en otros proyectos internos, por ejemplo en una aplicación para llevar el control de los contratos con clientes de la empresa basado todo en PowerPlatform"
+              }
+            ],
+            "competences": [
+              {
+                "name": "Microsoft Power Automate",
+                "type": "technology"
+              },
+              {
+                "name": "Microsoft Power BI",
+                "type": "technology"
+              },
+              {
+                "name": "Microsoft Power Plataform",
+                "type": "technology"
+              },
+              {
+                "name": "Microsoft Sharepoint",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GARSA",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/199a01b4-7cee-4987-9216-4be10fcf6e12_garsa_logo.jpg",
+            "alt": "garsa_logo.jpg"
+          },
+          "URL": "https://www.garsa.com/"
+        },
+        "roles": [
+          {
+            "name": "RPA & automation Manager",
+            "startDate": "2023-02-01",
+            "finishDate": "2024-03-01",
+            "challenges": [
+              {
+                "description": "Now, I can, not only, design processes but also lead a group of people. \nI code less but people around me trust in me and I trust in them.\nThe knowledge I've got during this years lets me be something like a mentor for new people and the company also trust my work.\n"
+              }
+            ],
+            "competences": [
+              {
+                "name": "Java",
+                "type": "technology"
+              },
+              {
+                "name": "Python",
+                "type": "technology"
+              },
+              {
+                "name": "Selenium",
+                "type": "technology"
+              },
+              {
+                "name": "VBA",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GARSA",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/5dd774c6-4687-408f-8b6b-155b619ad4eb_garsa_logo.jpg",
+            "alt": "garsa_logo.jpg"
+          },
+          "URL": "https://www.garsa.com/"
+        },
+        "roles": [
+          {
+            "name": "RPA & automation Analyst/Developer ",
+            "startDate": "2020-01-01",
+            "finishDate": "2023-01-01",
+            "challenges": [
+              {
+                "description": "I've achieved some responsability so I can now design processes that are making life easier for workers and more relaiable for the company."
+              }
+            ],
+            "competences": [
+              {
+                "name": "Java",
+                "type": "technology"
+              },
+              {
+                "name": "Python",
+                "type": "technology"
+              },
+              {
+                "name": "Selenium",
+                "type": "technology"
+              },
+              {
+                "name": "VBA",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GARSA",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/21030ff7-aa70-4a73-8b91-fd7eb6d59743_garsa_logo.jpg",
+            "alt": "garsa_logo.jpg"
+          },
+          "URL": "https://www.garsa.com/"
+        },
+        "roles": [
+          {
+            "name": "RPA & automation Developer ",
+            "startDate": "2017-12-01",
+            "finishDate": "2020-01-01",
+            "challenges": [
+              {
+                "description": "Aaaand there It is. Jidoka is my canvas, and java + seleniun my tools.\nNow I'm working with GAS, VBA, RPA, Java and so on, only with the purpose of automating jobs"
+              }
+            ],
+            "competences": [
+              {
+                "name": ".NET",
+                "type": "technology"
+              },
+              {
+                "name": "Java",
+                "type": "technology"
+              },
+              {
+                "name": "Python",
+                "type": "technology"
+              },
+              {
+                "name": "Selenium",
+                "type": "technology"
+              },
+              {
+                "name": "VBA",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GARSA",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/ad35d32a-648b-455a-984f-50a4a7f0893d_garsa_logo.jpg",
+            "alt": "garsa_logo.jpg"
+          },
+          "URL": "https://www.garsa.com/"
+        },
+        "roles": [
+          {
+            "name": "Junior Java Dev",
+            "startDate": "2017-06-01",
+            "finishDate": "2017-12-01",
+            "challenges": [
+              {
+                "description": "I've started yo do some Jobs more complicated on Java. I LOVE automation, so my bosses keep telling me to look for something related"
+              }
+            ],
+            "competences": [
+              {
+                "name": "Java",
+                "type": "technology"
+              },
+              {
+                "name": "VBA",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organization": {
+          "name": "GARSA",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/24/09/17/d232da60-4d1c-42cb-9607-bb5eea2478c9_garsa_logo.jpg",
+            "alt": "garsa_logo.jpg"
+          },
+          "URL": "https://www.garsa.com/"
+        },
+        "roles": [
+          {
+            "name": "Intern Java Dev",
+            "startDate": "2017-04-01",
+            "finishDate": "2017-06-01",
+            "competences": [
+              {
+                "name": "Java",
+                "type": "technology"
+              },
+              {
+                "name": "VBA",
+                "type": "technology"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "knowledge": {
+    "languages": [
+      {
+        "name": "EN",
+        "fullName": "Inglés",
+        "level": "Professional working proficiency"
+      },
+      {
+        "name": "ES",
+        "fullName": "Español",
+        "level": "Native or bilingual proficiency"
+      },
+      {
+        "name": "FR",
+        "fullName": "Francés",
+        "level": "Limited working proficiency"
+      }
+    ],
+    "hardSkills": [
+      {
+        "skill": {
+          "name": "API",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "CSS",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Google Cloud",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "HTML",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Java",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Latex",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Linux",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Maven",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Microsoft Excel",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Microsoft Power Automate",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Microsoft Power Plataform",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Python",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "REST",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Selenium",
+          "type": "technology"
+        }
+      },
+      {
+        "skill": {
+          "name": "Visual Basic",
+          "type": "technology"
+        }
+      }
+    ],
+    "studies": [
+      {
+        "studyType": "officialDegree",
+        "degreeAchieved": true,
+        "name": "CFGS Desarrollo de Aplicaciones Multiplataforma ",
+        "startDate": "2015-09-01",
+        "institution": {
+          "name": "IFE Cámara de Comercio de Madrid "
+        },
+        "finishDate": "2017-06-01",
+        "linkedCompetences": [
+          {
+            "name": ".NET",
+            "type": "technology"
+          },
+          {
+            "name": "Java",
+            "type": "technology"
+          },
+          {
+            "name": "VBA",
+            "type": "technology"
+          }
+        ]
+      },
+      {
+        "studyType": "certification",
+        "degreeAchieved": false,
+        "name": "Level I Certification",
+        "startDate": "2023-04-01",
+        "institution": {
+          "name": "Robocorp",
+          "URL": "https://downloads.robocorp.com/certificates/level1/9db7b86d-7f09-42b8-9c3f-0c2fde9bb3a3.pdf",
+          "image": {
+            "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/04/19/82d90557-b911-4480-bcc2-4fc10dcb3ebc_descarga.jpg",
+            "alt": "descarga.jpg"
+          }
+        }
+      }
+    ],
+    "softSkills": [
+      {
+        "skill": {
+          "name": "Capacidad de mentorización",
+          "type": "practice"
+        }
+      },
+      {
+        "skill": {
+          "name": "Liderazgo",
+          "type": "practice"
+        }
+      },
+      {
+        "skill": {
+          "name": "Proactividad",
+          "type": "practice"
+        }
+      }
+    ]
+  },
+  "careerPreferences": {
+    "contact": {
+      "publicProfiles": [
+        {
+          "URL": "https://www.linkedin.com/in/lorenzo-del-barrio-leal/",
+          "type": "linkedin"
+        },
+        {
+          "URL": "https://github.com/ldbl1",
+          "type": "github"
+        }
+      ],
+      "contactMails": [
+        "barrioleal1994@gmail.com"
+      ],
+      "phoneNumbers": [
+        {
+          "number": "609781729",
+          "countryCode": "+34"
+        }
+      ]
+    },
+    "preferences": {
+      "preferredCompetences": [
+        {
+          "name": "Google Apps Script",
+          "type": "technology"
+        },
+        {
+          "name": "Microsoft Power Automate",
+          "type": "technology"
+        },
+        {
+          "name": "Microsoft Power Plataform",
+          "type": "technology"
+        },
+        {
+          "name": "Python",
+          "type": "technology"
+        },
+        {
+          "name": "Selenium",
+          "type": "technology"
+        },
+        {
+          "name": "Visual Basic",
+          "type": "technology"
+        }
+      ],
+      "preferredRoles": [
+        "Lead Product Manager",
+        "Tech Lead"
+      ]
+    },
+    "status": "openToOffers",
+    "requirements": {
+      "contractTypes": [
+        "permanent"
+      ]
+    }
+  },
+  "manfredSpecificData": {
+    "mainStackTechs": [
+      {
+        "name": "Microsoft Power Plataform",
+        "type": "technology"
+      },
+      {
+        "name": "Python",
+        "type": "technology"
+      },
+      {
+        "name": "Selenium",
+        "type": "technology"
+      }
+    ],
+    "desiredJobDescription": "Me gustaría dedicarme a soluciones con Google, que es lo que más he tocado últimamente o soluciones en cloud y que cada día sea una lección nueva. También me encanta selenium (RPA) y tengo bastante conocimiento crítico sobre cómo llegar a buen puerto con proyectos con esta tecnología. Y ante todo, teletrabajo 100%. En definitiva, Google, Selenium, Java y Python, mis pasiones :)\n\n"
+  }
+}
