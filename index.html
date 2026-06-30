@@ -1,146 +1,137 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lorenzo del Barrio Leal · Automation Tech Lead</title>
-  <meta name="description" content="Portfolio de Lorenzo del Barrio Leal: automatización, RPA, Power Platform, Python, Selenium y liderazgo técnico." />
-  <meta name="theme-color" content="#111827" />
-
-  <meta property="og:title" content="Lorenzo del Barrio Leal · Portfolio" />
-  <meta property="og:description" content="Automation Tech Lead especializado en automatización, RPA, Power Platform, Python y Selenium." />
-  <meta property="og:type" content="website" />
-
-  <link rel="preconnect" href="https://api.github.com" />
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lorenzo del Barrio Leal · Automation Tech Lead</title>
+    <meta name="description" content="Portfolio de Lorenzo del Barrio Leal" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="Navegación principal">
-      <a class="brand" href="#top" aria-label="Inicio">
-        <span class="brand-mark">LD</span>
-        <span class="brand-text">Portfolio</span>
-      </a>
-      <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
-      <button id="menuToggle" class="icon-button nav-toggle" type="button" aria-label="Abrir menú">☰</button>
-      <div id="navLinks" class="nav-links">
-        <a href="#about">Bio</a>
-        <a href="#timeline">CV</a>
-        <a href="#skills">Skills</a>
-        <a href="#repos">Repos</a>
-        <a href="#articles">Artículos</a>
-        <a href="#contact">Contacto</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section id="top" class="hero section">
-      <div class="wrap hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Automatización · RPA · Power Platform</p>
-          <h1 id="profileName">Cargando perfil…</h1>
-          <p id="profileTitle" class="hero-title"></p>
-          <p id="profileSummary" class="hero-summary"></p>
-          <div id="profileLinks" class="actions"></div>
+<body><a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+        <nav class="nav wrap"><a class="brand" href="#top"><span class="brand-mark">LD</span><span
+                    class="brand-text">Portfolio</span></a><button id="themeToggle" class="icon-button"
+                type="button">☾</button><button id="menuToggle" class="icon-button nav-toggle" type="button">☰</button>
+            <div id="navLinks" class="nav-links"><a href="#about">Bio</a><a href="#timeline">CV</a><a
+                    href="#skills">Skills</a><a href="#repos">Repos</a><a href="#articles">Artículos</a><a
+                    href="#contact">Contacto</a></div>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="top" class="hero section">
+            <div class="wrap hero-grid">
+                <div class="hero-copy reveal">
+                    <p id="profileEyebrow" class="eyebrow"></p>
+                    <h1 id="profileName">Cargando perfil…</h1>
+                    <p id="profileTitle" class="hero-title"></p>
+                    <p id="profileSummary" class="hero-summary"></p>
+                    <div id="profileLinks" class="actions"></div>
+                </div>
+                <aside class="hero-card reveal"><img id="profileAvatar" class="profile-avatar"
+                        src="./assets/profile.png" alt="Avatar" />
+                    <div id="statusLabel" class="status-pill"></div>
+                    <h2>Stack principal</h2>
+                    <div id="mainStack" class="chip-list"></div>
+                    <div class="mini-stats">
+                        <div><strong id="yearsExp">+0</strong><span>años exp.</span></div>
+                        <div><strong id="repoCount">0</strong><span>repos públicos</span></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="wrap about-layout">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Sobre mí</p>
+                    <h2>Bio</h2>
+                    <p class="muted about-intro">Una visión resumida de mi recorrido, intereses y forma de entender la
+                        automatización.</p>
+                </div>
+                <div class="panel bio-panel reveal">
+                    <div id="aboutText" class="rich-text bio-text"></div>
+                </div>
+            </div>
+        </section>
+        <section id="timeline" class="section alt">
+            <div class="wrap">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Trayectoria</p>
+                    <h2>Timeline estilo CV</h2>
+                </div>
+                <div id="timelineList" class="timeline"></div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="wrap">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Conocimiento</p>
+                    <h2>Skills, idiomas y formación</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="panel reveal">
+                        <h3>Hard skills</h3>
+                        <div id="hardSkills" class="chip-list"></div>
+                    </article>
+                    <article class="panel reveal">
+                        <h3>Soft skills</h3>
+                        <div id="softSkills" class="chip-list"></div>
+                    </article>
+                    <article class="panel reveal">
+                        <h3>Idiomas</h3>
+                        <div id="languages" class="list language-list"></div>
+                    </article>
+                    <article class="panel reveal">
+                        <h3>Formación</h3>
+                        <div id="studies" class="list"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="repos" class="section alt">
+            <div class="wrap">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">GitHub</p>
+                    <h2>Repositorios destacados</h2>
+                </div>
+                <div id="repoList" class="cards-grid"></div>
+            </div>
+        </section>
+        <section id="articles" class="section">
+            <div class="wrap">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Ideas</p>
+                    <h2>Artículos</h2>
+                </div>
+                <div id="articleList" class="cards-grid"></div>
+            </div>
+        </section>
+        <section id="contact" class="section alt">
+            <div class="wrap contact-grid">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Contacto</p>
+                    <h2>¿Hablamos?</h2>
+                    <p class="muted">El formulario funciona con FormSubmit o Formspree. Configúralo en
+                        <code>config.js</code>.</p>
+                </div>
+                <form id="contactForm" class="panel contact-form reveal"><label>Nombre<input name="name"
+                            required /></label><label>Email<input name="email" type="email"
+                            required /></label><label>Mensaje<textarea name="message" rows="6"
+                            required></textarea></label><button class="primary-button" type="submit">Enviar
+                        mensaje</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap">
+            <p>© <span id="year"></span> <span id="footerName">Lorenzo</span>. Hecho con GitHub Pages.</p>
         </div>
-        <aside class="hero-card reveal" aria-label="Resumen profesional">
-          <div class="status-pill">Open to offers</div>
-          <h2>Stack principal</h2>
-          <div id="mainStack" class="chip-list"></div>
-          <div class="mini-stats">
-            <div><strong id="yearsExp">+0</strong><span>años exp.</span></div>
-            <div><strong id="repoCount">0</strong><span>repos públicos</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="wrap two-col">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Bio</h2>
-        </div>
-        <div class="panel reveal">
-          <div id="aboutText" class="rich-text"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="timeline" class="section alt">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Trayectoria</p>
-          <h2>Timeline estilo CV</h2>
-        </div>
-        <div id="timelineList" class="timeline"></div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Conocimiento</p>
-          <h2>Skills, idiomas y formación</h2>
-        </div>
-        <div class="skills-grid">
-          <article class="panel reveal"><h3>Hard skills</h3><div id="hardSkills" class="chip-list"></div></article>
-          <article class="panel reveal"><h3>Soft skills</h3><div id="softSkills" class="chip-list"></div></article>
-          <article class="panel reveal"><h3>Idiomas</h3><div id="languages" class="list"></div></article>
-          <article class="panel reveal"><h3>Formación</h3><div id="studies" class="list"></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="repos" class="section alt">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">GitHub</p>
-          <h2>Repositorios destacados</h2>
-          <p class="muted">Puedes controlar qué aparece desde <code>config.js</code>.</p>
-        </div>
-        <div id="repoList" class="cards-grid"></div>
-      </div>
-    </section>
-
-    <section id="articles" class="section">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Ideas</p>
-          <h2>Artículos</h2>
-        </div>
-        <div id="articleList" class="cards-grid"></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="wrap contact-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Contacto</p>
-          <h2>¿Hablamos?</h2>
-          <p class="muted">El formulario funciona con Formspree si añades endpoint. Si no, usa tu cliente de correo con un enlace mailto.</p>
-        </div>
-        <form id="contactForm" class="panel contact-form reveal">
-          <label>Nombre<input name="name" autocomplete="name" required /></label>
-          <label>Email<input name="email" type="email" autocomplete="email" required /></label>
-          <label>Mensaje<textarea name="message" rows="6" required></textarea></label>
-          <button class="primary-button" type="submit">Enviar mensaje</button>
-          <p id="formStatus" class="form-status" role="status"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> <span id="footerName">Lorenzo</span>. Hecho con GitHub Pages.</p>
-    </div>
-  </footer>
-
-  <script src="./config.js"></script>
-  <script src="./script.js"></script>
+    </footer>
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

@@ -1,55 +1,56 @@
 window.PORTFOLIO_CONFIG = {
-  // GitHub
-  githubUsername: "ldbl1",
-
-  // Secciones visibles
-  show: {
-    hero: true,
-    about: true,
-    repos: true,
-    timeline: true,
-    skills: true,
-    articles: true,
-    contact: true
-  },
-
-  // Repositorios: elige qué se ve y qué no.
-  // Si featuredOnly = true, solo se muestran los repos incluidos en include.
-  repos: {
-    featuredOnly: false,
-    include: [],
-    exclude: [],
-    excludeForks: true,
-    excludeArchived: true,
-    max: 9,
-    sortBy: "updated", // updated | stars | name
-    manualDescriptions: {
-      // "nombre-del-repo": "Descripción personalizada para el portfolio"
+    githubUsername: "ldbl1",
+    profile: {
+        eyebrow: "Automatización · RPA · Power Platform",
+        summary: "Diseño, lidero y automatizo procesos con foco en eficiencia, robustez y valor real para negocio.",
+        avatar: "./assets/profile.png",
+        statusLabel: "Working with ❤ from Toledo"
     },
-    tags: {
-      // "nombre-del-repo": ["Python", "RPA", "Selenium"]
+    show: {
+        hero: true,
+        about: true,
+        repos: true,
+        timeline: true,
+        skills: true,
+        articles: true,
+        contact: true
+    },
+    repos: {
+        featuredOnly: true,
+        include: ["dwSongs", "ldbl1.github.io", "dockdwsongs"],
+        exclude: [],
+        excludeForks: true,
+        excludeArchived: true,
+        max: 9,
+        sortBy: "updated",
+        manualDescriptions: {
+          "dwSongs": "Aplicación de escritorio escrita en python para poder descargar música desde YouTube.", 
+          "ldbl1.github.io": "Portfolio personal de Lorenzo del Barrio Leal.", 
+          "dockdwsongs": "Versión dockerizada de la aplicación dwSongs con integración con la API de Jellyfin."
+        },
+        tags: {}
+    },
+    articles: {
+        source: "local",
+        localFile: "./posts/articles.json",
+        max: 6
+    },
+    contact: {
+        email: "barrioleal1994@gmail.com",
+        provider: "formsubmit",
+        formspreeEndpoint: "",
+        subjectPrefix: "Contacto desde portfolio"
+    },
+    languages: {
+        flagsPath: "./assets/",
+        flags: {
+            ES: "es.svg",
+            EN: "en.svg",
+            FR: "fr.svg"
+        }
+    },
+    theme: {
+        defaultMode: "dark",
+        accent: "#7c3aed"
     }
-  },
-
-  // Artículos: modo local incluido. Más adelante se puede conectar con RSS/DEV.to/Hashnode.
-  articles: {
-    source: "local", // local
-    localFile: "./posts/articles.json",
-    max: 6
-  },
-
-  // Contacto sin SMTP:
-  // Opción recomendada: Formspree. Crea un endpoint gratis y pega aquí la URL.
-  // Mientras tanto, el formulario usa mailto como fallback.
-  contact: {
-    email: "barrioleal1994@gmail.com",
-    formspreeEndpoint: "", // ejemplo: https://formspree.io/f/xxxxxxx
-    subjectPrefix: "Contacto desde portfolio"
-  },
-
-  // Personalización visual
-  theme: {
-    defaultMode: "dark", // dark | light
-    accent: "#7c3aed"
-  }
 };

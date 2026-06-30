@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título del artículo · Lorenzo del Barrio Leal</title>
+  <meta name="description" content="Resumen breve del artículo." />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";</script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">LD</span><span class="brand-text">Portfolio</span></a>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
+      <div class="nav-links"><a href="../index.html#about">Bio</a><a href="../index.html#timeline">CV</a><a href="../index.html#repos">Repos</a><a href="../index.html#articles">Artículos</a><a href="../index.html#contact">Contacto</a></div>
+    </nav>
+  </header>
+  <main>
+    <article class="section">
+      <div class="wrap article-layout">
+        <p class="eyebrow">Artículo</p>
+        <h1>Título del artículo</h1>
+        <p class="hero-title">Subtítulo o frase introductoria del artículo.</p>
+        <div class="card-meta" style="margin:24px 0 0"><span>30 jun 2026</span><span>#Python</span><span>#automatización</span><span>#RPA</span></div>
+        <div class="panel rich-text">
+<h2>Introducción</h2><p>Aquí escribe la introducción.</p><h2>Contexto</h2><p>Aquí puedes explicar el escenario real.</p><h2>Desarrollo</h2><p>Aquí va el cuerpo principal.</p><h2>Conclusiones</h2><p>Aquí resume aprendizajes y próximos pasos.</p>
+        </div>
+        <div class="actions" style="margin-top:32px"><a class="action-link primary" href="../index.html#articles">Volver a artículos</a></div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer"><div class="wrap"><p>© Lorenzo del Barrio Leal. Hecho con GitHub Pages.</p></div></footer>
+  <script>
+(function () {
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  const syncIcon = () => { btn.textContent = document.documentElement.dataset.theme === 'dark' ? '☾' : '☀'; };
+  syncIcon();
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('theme', next);
+    syncIcon();
+  });
+})();
+</script>
+</body>
+</html>
