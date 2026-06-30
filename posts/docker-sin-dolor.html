@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +13,7 @@
     <nav class="nav wrap">
       <a class="brand" href="../index.html"><span class="brand-mark">LD</span><span class="brand-text">Portfolio</span></a>
       <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
-      <div class="nav-links"><a href="../index.html#about">Bio</a><a href="../index.html#timeline">CV</a><a href="../index.html#repos">Repos</a><a href="../index.html#articles">Artículos</a><a href="../index.html#contact">Contacto</a></div>
+      <div class="nav-links"><a href="../index.html#about">Bio</a><a href="../index.html#timeline">CV</a><a href="../index.html#repos">Repos</a><a href="../index.html#articles">Artículos</a><a href="https://github.com/ldbl1">GitHub</a></div>
     </nav>
   </header>
   <main>
@@ -25,16 +25,16 @@
         <div class="card-meta" style="margin:24px 0 0"><span>30 jun 2026</span><span>#Docker</span><span>#contenedores</span><span>#DevOps</span><span>#automatización</span></div>
         <div class="panel rich-text">
           <h2>Por qué me gusta usar Docker</h2>
-          <p>Docker me parece especialmente útil cuando un proyecto tiene dependencias, servicios auxiliares o versiones concretas que no quiero dejar “a la memoria” de quien lo instala. Para mí, un buen contenedor no es solo una forma de ejecutar una aplicación: es una manera de documentar cómo vive esa aplicación.</p>
-          <p>En proyectos de automatización, esto evita una de las frases más peligrosas: “en mi máquina funciona”. Si una automatización necesita una versión concreta de Python, librerías específicas, un navegador headless o una base de datos auxiliar, prefiero que todo quede expresado en ficheros versionados.</p>
+          <p>Docker me parece especialmente útil cuando un proyecto tiene dependencias, servicios auxiliares o versiones concretas que no quiero dejar "a la memoria" de quien lo instala. Para mi, Docker es especialmente útil cuando un proyecto es código que otras personas van a ejecutar, probar o mantener.</p>
+          <p>En proyectos de automatización, esto evita una de las frases más peligrosas: "en mi máquina funciona". Si una automatización necesita una versión concreta de Python, librerías con versiones específicas o acceso a servicios externos, Docker es una forma estupenda de documentar eso y eliminar incertidumbre.</p>
           <h2>Mi enfoque mínimo</h2>
-          <p>Intento empezar simple. Si el proyecto no lo necesita, no monto una arquitectura enorme. Normalmente separo tres piezas: el código, la imagen y la forma de ejecutarlo. El objetivo es que cualquier persona pueda clonar el repositorio y levantar el entorno con pocos comandos.</p>
+          <p>Intento empezar simple. Si el proyecto no lo necesita, no monto una arquitectura enorme. Normalmente separo tres piezas: el código, la imagen y la forma de ejecutarlo. El objetivo es tener algo que sea fácil de entender, cambiar y ejecutar.</p>
           <pre><code>docker build -t mi-automatizacion .
 docker run --rm mi-automatizacion
 </code></pre>
-          <p>Cuando aparecen varios servicios, paso a <code>docker compose</code>. Por ejemplo, una automatización que necesita una base de datos local, un servicio mock o un panel de pruebas queda mucho más clara si todo está descrito en un único fichero de composición.</p>
+          <p>Cuando aparecen varios servicios, paso a <code>docker compose</code>. Por ejemplo, una automatización que necesita una base de datos local, un servicio mock o un panel de pruebas que levante en paralelo.</p>
           <h2>Qué suelo meter en el Dockerfile</h2>
-          <p>Me gusta que el <code>Dockerfile</code> sea explícito, pequeño y fácil de leer. Una imagen que nadie entiende se convierte en otra caja negra. Como norma general, intento fijar versiones, copiar solo lo necesario y separar instalación de dependencias y copia del código.</p>
+          <p>Me gusta que el <code>Dockerfile</code> sea explícito, pequeño y fácil de leer. Una imagen que nadie entiende se convierte en otra caja negra. Como norma general, intento fijar versiones, usar imágenes pequeñas de base (<code>-slim</code> o <code>-alpine</code>) y documentar las capas.</p>
           <pre><code>FROM python:3.12-slim
 
 WORKDIR /app
@@ -45,10 +45,10 @@ COPY . .
 CMD ["python", "main.py"]
 </code></pre>
           <h2>Buenas prácticas que me han ahorrado problemas</h2>
-          <p>La primera es no guardar secretos dentro de la imagen. Las credenciales deben entrar por variables de entorno, ficheros ignorados o mecanismos seguros del entorno donde se ejecute. La segunda es cuidar el tamaño de la imagen: menos dependencias suelen significar menos superficie de error.</p>
-          <p>También intento que los logs salgan por consola. En automatización, poder revisar qué ha pasado sin entrar manualmente al contenedor es clave para operar bien. Si una ejecución falla, quiero saber en qué paso, con qué entrada y con qué salida.</p>
+          <p>La primera es no guardar secretos dentro de la imagen. Las credenciales deben entrar por variables de entorno, ficheros ignorados o mecanismos seguros del entorno donde se ejecute. La imagen debe ser una plantilla que funcione en cualquier lado, con parámetros que se pasen desde fuera.</p>
+          <p>También intento que los logs salgan por consola. En automatización, poder revisar qué ha pasado sin entrar manualmente al contenedor es clave para operar bien. Si una ejecución falla, quiero verlo en los logs de Docker.</p>
           <h2>Conclusión</h2>
-          <p>Para mí, Docker merece la pena cuando reduce incertidumbre. Si el contenedor hace que el proyecto sea más fácil de ejecutar, probar, desplegar o mantener, adelante. Si solo lo uso porque “queda moderno”, probablemente estoy resolviendo un problema que no existe.</p>
+          <p>Para mí, Docker merece la pena cuando reduce incertidumbre. Si el contenedor hace que el proyecto sea más fácil de ejecutar, probar, desplegar o mantener, adelante. Si solo lo uso porque suena bien, probablemente es innecesario.</p>
         </div>
         <div class="actions" style="margin-top:32px"><a class="action-link primary" href="../index.html#articles">Volver a artículos</a></div>
       </div>
