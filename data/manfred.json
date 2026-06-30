@@ -8,8 +8,8 @@
     "profile": {
       "name": "Lorenzo",
       "surnames": "del Barrio Leal",
-      "title": "Automation Tech Lead",
-      "description": "Me he dedicado desde que tengo uso de memoria a crear pequeños scripts para automatizar pequeñas tareas con AHK e incluso a hacer alguna trampita en juegos. \n\nCuando me metí al mundo de la informática me dediqué sobre todo a hacer macros en VBA y poco más tarde, con los conocimientos que tenía de Java, hice una migración de un sistema basado en UIPATH a Jidoka. \nMás tarde, cuando Appian compró Jidoka, migramos a AppianRPA. \n\nDesde entonces mi objetivo es siempre trabajar en automatizaciones y me encanta probar nuevas herramientas. \n\nHasta ahora he tenido la oportunidad de trabajar con muchos sistemas de automatización como AppianRPA, con Selenium y Python, AHK, VBA, Google Apps Scripts,  Robocorp y PowerPlatform. \n\nMi trabajo se basa en conseguir que los objetivos se cumplan por parte del equipo para poder llegar a los SLA's impuestos por el cliente. \n\nMi objetivo es seguir creciendo y con el conocimiento que he adquirido y los modelos que creo, poder llegar a ayudar a más personas a modelar procesos funcionales rentables. \n\nMe encanta trabajar con gente nueva y poder ayudar a los que están empezando en este mundo cada vez más grande de la informática.",
+      "title": "Automation enthusiast",
+      "description": "Soy Automation Tech Lead especializado en automatización de procesos, diseño de soluciones de negocio y liderazgo técnico. Mi trayectoria ha evolucionado desde el desarrollo hands-on hasta la gestión de equipos, la coordinación de entregas y la creación de soluciones escalables orientadas a negocio.\n\nHe trabajado con tecnologías como AppianRPA, Selenium, Python, VBA, Google Apps Script, Robocorp, Microsoft Power Platform y n8n. Actualmente estoy centrado en Power Platform, diseñando soluciones con Power Pages, Power Automate y herramientas del ecosistema Microsoft para optimizar procesos, mejorar la trazabilidad y aportar valor real a los equipos.\n\nA lo largo de los años he asumido responsabilidades de mayor impacto, pasando de construir automatizaciones a liderar iniciativas, acompañar a perfiles técnicos y asegurar que las soluciones cumplen con los objetivos, los SLA y las necesidades del cliente. Me interesa que cada automatización sea mantenible, robusta y útil en operación real.\n\nEntiendo la automatización como una forma de impulsar el trabajo de las personas, no de sustituirlas. Para mí, automatizar significa reducir tareas repetitivas, minimizar errores y liberar tiempo para que los equipos puedan centrarse en actividades donde aportan criterio, experiencia y valor real.\n\nFuera del entorno profesional sigo siendo un frikazo de la informática. En casa tengo mi propio servidor, que uso como NAS y laboratorio personal, con servicios en Docker, DNS privadas, proxies, Raspberry Pi y soluciones autoalojadas para seguir aprendiendo y ofrecer a mi familia almacenamiento seguro sin depender siempre de suscripciones externas.\n\nEsa combinación entre visión de negocio, experiencia en gestión y curiosidad técnica constante define bastante bien mi perfil. Me gusta liderar, diseñar soluciones y mejorar procesos, pero también seguir trasteando, aprendiendo y construyendo proyectos personales que me mantienen conectado con la parte más técnica de la informática.",
       "location": {
         "notes": "Autocompleted using Google Maps API (id: ChIJ93Fa7xbuQQ0Ri8m7_R-P0Ws)",
         "country": "España",
@@ -19,11 +19,11 @@
     },
     "relevantLinks": [
       {
-        "type": "linkedin",
+        "type": "LinkedIn",
         "URL": "https://www.linkedin.com/in/lorenzo-del-barrio-leal/"
       },
       {
-        "type": "github",
+        "type": "GitHub",
         "URL": "https://github.com/ldbl1"
       }
     ]
@@ -32,18 +32,27 @@
     "jobs": [
       {
         "organization": {
-          "name": "AENOR",
+          "name": "Alten",
           "image": {
             "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/26/03/05/86c4d749-8ad7-4fb3-90f0-c2adf29d569d_ventajas-n.png",
             "alt": "ventajas-n.png"
           },
-          "URL": "https://www.aenor.com/"
+          "URL": "https://www.alten.es/"
         },
         "roles": [
           {
-            "name": "PowerPlatfom Administrator",
+            "name": "PowerPlatform Consultant",
             "startDate": "2026-02-01",
+             "challenges": [
+              {
+                "description": "Trabajando para el cliente AENOR en la administración de su PowerPlatform y en la creación de soluciones integrales para gestión de procesos internos y de negocio con Power Platform."
+              }
+            ],
             "competences": [
+              {
+                "name": "Microsoft Power Pages",
+                "type": "technology"
+              },
               {
                 "name": "Microsoft Power Automate",
                 "type": "technology"
@@ -284,19 +293,19 @@
   "knowledge": {
     "languages": [
       {
-        "name": "EN",
-        "fullName": "Inglés",
-        "level": "Professional working proficiency"
-      },
-      {
         "name": "ES",
         "fullName": "Español",
-        "level": "Native or bilingual proficiency"
+        "level": "Nivel nativo"
+      },
+      {
+        "name": "EN",
+        "fullName": "Inglés",
+        "level": "Nivel profesional"
       },
       {
         "name": "FR",
         "fullName": "Francés",
-        "level": "Limited working proficiency"
+        "level": "Básico"
       }
     ],
     "hardSkills": [
@@ -517,6 +526,10 @@
     "mainStackTechs": [
       {
         "name": "Microsoft Power Plataform",
+        "type": "technology"
+      },
+      {
+        "name": "Java",
         "type": "technology"
       },
       {

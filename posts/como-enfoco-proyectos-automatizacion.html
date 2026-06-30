@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cómo enfoco un proyecto de automatización de principio a fin · Lorenzo del Barrio Leal</title>
+  <meta name="description" content="Mi forma de analizar, modelar, construir y mantener automatizaciones con foco en valor real." />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";</script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="brand" href="../index.html"><span class="brand-mark">LD</span><span class="brand-text">Portfolio</span></a>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
+      <div class="nav-links"><a href="../index.html#about">Bio</a><a href="../index.html#timeline">CV</a><a href="../index.html#repos">Repos</a><a href="../index.html#articles">Artículos</a><a href="../index.html#contact">Contacto</a></div>
+    </nav>
+  </header>
+  <main>
+    <article class="section">
+      <div class="wrap article-layout">
+        <p class="eyebrow">Artículo</p>
+        <h1>Cómo enfoco un proyecto de automatización de principio a fin</h1>
+        <p class="hero-title">De la conversación inicial al mantenimiento: mi forma de diseñar automatizaciones robustas.</p>
+        <div class="card-meta" style="margin:24px 0 0"><span>30 jun 2026</span><span>#automatización</span><span>#RPA</span><span>#procesos</span><span>#Selenium</span><span>#Power Platform</span></div>
+        <div class="panel rich-text">
+          <h2>Antes de automatizar, entender</h2>
+          <p>Mi primer paso no es abrir un IDE ni elegir herramienta. Antes intento entender el proceso: quién lo ejecuta, con qué frecuencia, qué entradas tiene, qué salidas genera y qué errores aparecen en el día a día. Muchas automatizaciones fallan no por la tecnología, sino porque se automatizó una idea incompleta del proceso.</p>
+          <p>En esta fase busco separar el proceso real del proceso ideal. El proceso ideal suele vivir en un documento; el proceso real aparece cuando hablas con las personas que lo hacen todos los días.</p>
+          <h2>Descubrimiento y viabilidad</h2>
+          <p>Una vez entendido el flujo, valoro la viabilidad. No todo lo repetitivo merece ser automatizado. Miro volumen, frecuencia, estabilidad de las aplicaciones, criticidad, excepciones y ahorro esperado. Si el proceso cambia cada semana o depende demasiado de decisiones humanas ambiguas, quizá primero toca rediseñarlo.</p>
+          <p>Me gusta hacer una matriz sencilla: impacto, esfuerzo, riesgo y mantenibilidad. Una automatización pequeña pero estable puede aportar más valor que una automatización enorme que se rompe cada dos días.</p>
+          <h2>Diseño funcional</h2>
+          <p>Después modelo el proceso en pasos claros. Intento que cada paso tenga una responsabilidad concreta: obtener datos, validar, transformar, ejecutar acción, registrar resultado y notificar. Cuando el diseño es claro, el código suele ser más simple.</p>
+          <p>También defino qué pasa cuando algo falla. Para mí, una automatización profesional no es la que nunca falla, sino la que falla de forma controlada, deja trazabilidad y permite reintentar o corregir sin caos.</p>
+          <h2>Elección de herramienta</h2>
+          <p>No tengo una herramienta única para todo. Si el proceso vive en Microsoft 365 y necesita aprobaciones, SharePoint o integraciones rápidas, Power Platform puede tener mucho sentido. Si necesito control fino, APIs, tratamiento de datos o Selenium, Python suele ser una opción muy potente.</p>
+          <p>Cuando hay aplicaciones web sin API, Selenium puede resolver mucho, pero lo trato con respeto: selectores robustos, esperas explícitas, logs claros y control de estados. La automatización web frágil suele salir cara si no se diseña con cuidado.</p>
+          <h2>Construcción incremental</h2>
+          <p>Prefiero construir por capas. Primero una versión mínima que demuestre que el camino es viable. Después agrego validaciones, manejo de errores, configuración, logs y métricas. Esto evita invertir demasiado antes de descubrir un bloqueo importante.</p>
+          <pre><code>1. Probar acceso y autenticación
+2. Leer datos reales de ejemplo
+3. Ejecutar una acción controlada
+4. Registrar resultado
+5. Añadir errores, reintentos y alertas
+</code></pre>
+          <h2>Operación y mantenimiento</h2>
+          <p>El proyecto no termina cuando el robot funciona una vez. Ahí empieza la parte importante: monitorizar, documentar, medir tiempos, registrar excepciones y preparar a las personas que van a convivir con la automatización.</p>
+          <p>Siempre intento dejar claro qué hace el robot, qué no hace, cómo se arranca, dónde están los logs, cómo se reintenta y a quién avisar si algo falla. Esta documentación vale oro cuando el proceso pasa a producción.</p>
+          <h2>Conclusión</h2>
+          <p>Automatizar bien no es solo quitar trabajo manual. Es estabilizar un proceso, reducir errores, liberar tiempo y crear una solución que se pueda mantener. La herramienta importa, pero el criterio de diseño importa más.</p>
+        </div>
+        <div class="actions" style="margin-top:32px"><a class="action-link primary" href="../index.html#articles">Volver a artículos</a></div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer"><div class="wrap"><p>© Lorenzo del Barrio Leal. Hecho con GitHub Pages.</p></div></footer>
+  <script>
+(function () {
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  const syncIcon = () => { btn.textContent = document.documentElement.dataset.theme === 'dark' ? '☾' : '☀'; };
+  syncIcon();
+  btn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('theme', next);
+    syncIcon();
+  });
+})();
+</script>
+</body>
+</html>

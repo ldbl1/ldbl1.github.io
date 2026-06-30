@@ -1,20 +1,14 @@
 name: Pages smoke check
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+on: [push, pull_request]
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check files exist
-        run: |
+      - run: |
           test -f index.html
-          test -f style.css
-          test -f script.js
-          test -f config.js
-          test -f data/manfred.json
+          test -f posts/articles.json
+          test -f posts/docker-sin-dolor.html
+          test -f posts/como-enfoco-proyectos-automatizacion.html
+          grep -q "themeToggle" posts/docker-sin-dolor.html
+          grep -q "data-theme" posts/docker-sin-dolor.html

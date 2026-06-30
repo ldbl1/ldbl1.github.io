@@ -1,8 +1,11 @@
 window.PORTFOLIO_CONFIG = {
-  // GitHub
   githubUsername: "ldbl1",
-
-  // Secciones visibles
+  profile: {
+    eyebrow: "Automatización · RPA · Power Platform",
+    summary: "Diseño, lidero y automatizo procesos con foco en eficiencia, robustez y valor real para negocio.",
+    avatar: "./assets/profile.png",
+    statusLabel: "Working with ❤ from Toledo"
+  },
   show: {
     hero: true,
     about: true,
@@ -12,44 +15,42 @@ window.PORTFOLIO_CONFIG = {
     articles: true,
     contact: true
   },
-
-  // Repositorios: elige qué se ve y qué no.
-  // Si featuredOnly = true, solo se muestran los repos incluidos en include.
   repos: {
-    featuredOnly: false,
-    include: [],
+    featuredOnly: true,
+    include: ["dwSongs", "ldbl1.github.io", "dockdwsongs"],
     exclude: [],
     excludeForks: true,
     excludeArchived: true,
     max: 9,
-    sortBy: "updated", // updated | stars | name
+    sortBy: "updated",
     manualDescriptions: {
-      // "nombre-del-repo": "Descripción personalizada para el portfolio"
+      "dwSongs": "Aplicación de escritorio escrita en python para poder descargar música desde YouTube.",
+      "ldbl1.github.io": "Portfolio personal de Lorenzo del Barrio Leal.",
+      "dockdwsongs": "Versión dockerizada de la aplicación dwSongs con integración con la API de Jellyfin."
     },
-    tags: {
-      // "nombre-del-repo": ["Python", "RPA", "Selenium"]
-    }
+    tags: {}
   },
-
-  // Artículos: modo local incluido. Más adelante se puede conectar con RSS/DEV.to/Hashnode.
   articles: {
-    source: "local", // local
+    source: "local",
     localFile: "./posts/articles.json",
     max: 6
   },
-
-  // Contacto sin SMTP:
-  // Opción recomendada: Formspree. Crea un endpoint gratis y pega aquí la URL.
-  // Mientras tanto, el formulario usa mailto como fallback.
   contact: {
     email: "barrioleal1994@gmail.com",
-    formspreeEndpoint: "", // ejemplo: https://formspree.io/f/xxxxxxx
+    provider: "formsubmit",
+    formspreeEndpoint: "",
     subjectPrefix: "Contacto desde portfolio"
   },
-
-  // Personalización visual
+  languages: {
+    flagsPath: "./assets/",
+    flags: {
+      ES: "es.svg",
+      EN: "en.svg",
+      FR: "fr.svg"
+    }
+  },
   theme: {
-    defaultMode: "dark", // dark | light
+    defaultMode: "dark",
     accent: "#7c3aed"
   }
 };

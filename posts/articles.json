@@ -1,36 +1,29 @@
 [
   {
-    "title": "Cómo enfoco un proyecto de automatización",
-    "summary": "Una nota inicial sobre descubrimiento, viabilidad, diseño del proceso y mantenimiento posterior.",
-    "date": "2026-01-15",
+    "title": "Docker sin dolor: contenedores útiles para proyectos reales",
+    "summary": "Una guía práctica sobre cómo uso Docker para aislar entornos, documentar dependencias y facilitar despliegues reproducibles.",
+    "date": "2026-06-30",
+    "tags": [
+      "Docker",
+      "contenedores",
+      "DevOps",
+      "automatización"
+    ],
+    "url": "./posts/docker-sin-dolor.html",
+    "external": false
+  },
+  {
+    "title": "Cómo enfoco un proyecto de automatización de principio a fin",
+    "summary": "Mi forma de analizar, modelar, construir y mantener automatizaciones con foco en valor, robustez y operación real.",
+    "date": "2026-06-30",
     "tags": [
       "automatización",
       "RPA",
-      "procesos"
+      "procesos",
+      "Selenium",
+      "Power Platform"
     ],
-    "url": "#",
-    "external": false
-  },
-  {
-    "title": "Selenium, Python y robustez en procesos reales",
-    "summary": "Ideas para evitar automatizaciones frágiles cuando dependes de aplicaciones web externas.",
-    "date": "2026-02-10",
-    "tags": [
-      "Python",
-      "Selenium"
-    ],
-    "url": "#",
-    "external": false
-  },
-  {
-    "title": "Power Platform como palanca interna",
-    "summary": "Casos donde Power Automate, SharePoint y Power BI pueden acelerar operaciones sin sobredimensionar soluciones.",
-    "date": "2026-03-05",
-    "tags": [
-      "Power Platform",
-      "Power Automate"
-    ],
-    "url": "#",
+    "url": "./posts/como-enfoco-proyectos-automatizacion.html",
     "external": false
   }
 ]
