@@ -132,13 +132,15 @@ function setupContact() {
 
     const s = $("#formStatus");
     const d = new FormData(f);
-    const provider = CONFIG.contact.provider || "mailto";
+    const contactConfig = CONFIG.contact || {};
+    const formAction = f.getAttribute("action") || "";
+    const provider = formAction.includes("formsubmit.cloud") ? "formsubmit" : (contactConfig.provider || "mailto");
 
-    if (provider === "formspree" && CONFIG.contact.formspreeEndpoint) {
+    if (provider === "formspree" && contactConfig.formspreeEndpoint) {
       s.textContent = "Enviando…";
 
       try {
-        const r = await fetch(CONFIG.contact.formspreeEndpoint, {
+        const r = await fetch(contactConfig.formspreeEndpoint, {
           method: "POST",
           body: d,
           headers: {
@@ -160,7 +162,18 @@ function setupContact() {
     if (provider === "formsubmit") {
       s.textContent = "Enviando…";
 
-      f.action = `https://formsubmit.cloud/f/${CONFIG.contact.formsubmitToken || CONFIG.contact.email}`;
+      const endpoint = contactConfig.formsubmitEndpoint || formAction || (
+        contactConfig.formsubmitToken
+          ? `https://formsubmit.cloud/f/${contactConfig.formsubmitToken}`
+          : ""
+      );
+
+      if (!endpoint) {
+        s.textContent = "No se ha configurado el endpoint de FormSubmit Cloud.";
+        return;
+      }
+
+      f.action = endpoint;
       f.method = "POST";
 
       // Evita duplicar campos ocultos si se pulsa varias veces
@@ -177,24 +190,18 @@ function setupContact() {
 
       addHiddenInput(
         "_subject",
-        `${CONFIG.contact.subjectPrefix || "Contacto desde portfolio"} - ${d.get("name") || "Nuevo mensaje"}`
+        `${contactConfig.subjectPrefix || "Contacto desde portfolio"} - ${d.get("name") || "Nuevo mensaje"}`
       );
 
-      addHiddenInput("_template", "table");
-      addHiddenInput("_captcha", "false");
-
-      // Honeypot antispam simple
-      addHiddenInput("_honey", "");
-
-      // FormSubmit usará el campo email como reply-to si existe
-      // El formulario ya tiene input name="email"
+      // El honeypot de FormSubmit Cloud ya va en el HTML como input name="_gotcha".
+      // El formulario ya tiene input name="email", que puede utilizarse como email de respuesta.
 
       f.submit();
       return;
     }
 
-    location.href = `mailto:${CONFIG.contact.email}?subject=${encodeURIComponent(
-      `${CONFIG.contact.subjectPrefix} - ${d.get("name")}`
+    location.href = `mailto:${contactConfig.email}?subject=${encodeURIComponent(
+      `${contactConfig.subjectPrefix || "Contacto desde portfolio"} - ${d.get("name") || "Nuevo mensaje"}`
     )}&body=${encodeURIComponent(
       `${d.get("message")}\n\nDe: ${d.get("name")} <${d.get("email")}>`
     )}`;
