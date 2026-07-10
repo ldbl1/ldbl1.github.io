@@ -160,7 +160,7 @@ function setupContact() {
     if (provider === "formsubmit") {
       s.textContent = "Enviando…";
 
-      f.action = `https://formsubmit.cloud/${CONFIG.contact.formsubmitToken || CONFIG.contact.email}`;
+      f.action = `https://formsubmit.cloud/f/${CONFIG.contact.formsubmitToken || CONFIG.contact.email}`;
       f.method = "POST";
 
       // Evita duplicar campos ocultos si se pulsa varias veces
