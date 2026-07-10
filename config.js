@@ -38,7 +38,7 @@ window.PORTFOLIO_CONFIG = {
   contact: {
     email: "barrioleal1994@gmail.com",
     provider: "formsubmit",
-    formsubmitToken:"ecd123d8b38b0a22d4afe4a9e4aa3e6c",
+    formsubmitToken:"963c7093-b423-49fd-bd15-e28757074e08",
     formspreeEndpoint: "",
     subjectPrefix: "Contacto desde portfolio"
   },
