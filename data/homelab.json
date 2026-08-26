@@ -1,0 +1,294 @@
+{
+  "title": "HomeLab",
+  "eyebrow": "Infraestructura self-hosted",
+  "summary": "Laboratorio doméstico multi-host basado en Linux y Docker, utilizado para aprender, automatizar tareas y ofrecer servicios privados de almacenamiento, productividad, multimedia y gestión de red.",
+  "description": "Mi HomeLab combina un servidor principal con una Raspberry Pi como nodo auxiliar de bajo consumo. La infraestructura aloja servicios reales para uso personal y familiar, y funciona como entorno permanente de aprendizaje sobre Docker, Linux, redes, bases de datos, automatización, monitorización y mantenimiento de sistemas.",
+  "status": "En evolución continua",
+  "startedYear": 2025,
+  "stats": [
+    { "value": "2", "label": "hosts" },
+    { "value": "+20", "label": "contenedores" },
+    { "value": "24/7", "label": "disponibilidad" },
+    { "value": "100%", "label": "self-hosted" }
+  ],
+  "hosts": [
+    {
+      "id": "serverlorodo",
+      "name": "ServerLorodo",
+      "type": "Servidor principal",
+      "icon": "server",
+      "description": "Nodo principal del HomeLab. Ejecuta la mayor parte de los servicios de productividad, automatización, gestión documental, multimedia y monitorización mediante contenedores Docker.",
+      "hardware": [
+        "Intel Core i7-3770",
+        "16 GB de memoria RAM",
+        "Almacenamiento local para aplicaciones y datos"
+      ],
+      "software": ["Linux", "Docker", "Docker Compose"],
+      "roles": [
+        "Servidor de aplicaciones",
+        "Nube privada",
+        "Servidor multimedia",
+        "Gestión documental",
+        "Automatización",
+        "Monitorización"
+      ]
+    },
+    {
+      "id": "pilorodo",
+      "name": "PiLorodo",
+      "type": "Nodo auxiliar",
+      "icon": "raspberry-pi",
+      "description": "Raspberry Pi dedicada a servicios esenciales de red y agentes de administración. Su bajo consumo permite mantener activos servicios básicos independientemente del servidor principal.",
+      "hardware": [
+        "Raspberry Pi 3B+",
+        "Arquitectura ARM64",
+        "Nodo de bajo consumo"
+      ],
+      "software": ["Debian", "Docker", "Docker Compose"],
+      "roles": [
+        "DNS local",
+        "Filtrado de publicidad",
+        "Agente de monitorización",
+        "Administración remota de contenedores"
+      ]
+    }
+  ],
+  "serviceCategories": [
+    {
+      "id": "productivity",
+      "name": "Productividad y nube privada",
+      "description": "Servicios orientados al almacenamiento, sincronización, gestión documental y biblioteca digital.",
+      "services": [
+        {
+          "name": "Nextcloud",
+          "description": "Nube privada para almacenar, sincronizar y compartir archivos.",
+          "url": "https://nextcloud.com/",
+          "featured": true
+        },
+        {
+          "name": "Paperless-ngx",
+          "description": "Gestión documental con clasificación, indexación y búsqueda de documentos digitalizados.",
+          "url": "https://docs.paperless-ngx.com/",
+          "featured": true
+        },
+        {
+          "name": "Calibre-Web Automated",
+          "description": "Biblioteca digital autogestionada para organizar y consultar libros electrónicos.",
+          "url": "https://github.com/crocodilestick/Calibre-Web-Automated",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "multimedia",
+      "name": "Multimedia",
+      "description": "Plataformas privadas para gestionar fotografías, música, vídeo y colecciones digitales.",
+      "services": [
+        {
+          "name": "Immich",
+          "description": "Gestión y copia privada de fotografías y vídeos con funciones de búsqueda y aprendizaje automático.",
+          "url": "https://immich.app/",
+          "featured": true
+        },
+        {
+          "name": "Jellyfin",
+          "description": "Servidor multimedia para organizar y reproducir contenido en distintos dispositivos.",
+          "url": "https://jellyfin.org/",
+          "featured": true
+        },
+        {
+          "name": "Navidrome",
+          "description": "Servidor personal de música compatible con clientes del ecosistema Subsonic.",
+          "url": "https://www.navidrome.org/",
+          "featured": false
+        },
+        {
+          "name": "RomM",
+          "description": "Gestión y catalogación de una biblioteca personal de videojuegos.",
+          "url": "https://romm.app/",
+          "featured": false
+        },
+        {
+          "name": "Downtify",
+          "description": "Herramienta integrada en el ecosistema multimedia del laboratorio.",
+          "url": "https://github.com/henriquesebastiao/downtify",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "name": "Automatización e IoT",
+      "description": "Servicios utilizados para crear flujos automáticos e integrar dispositivos.",
+      "services": [
+        {
+          "name": "n8n",
+          "description": "Automatización visual de procesos, integraciones y flujos de trabajo.",
+          "url": "https://n8n.io/",
+          "featured": true
+        },
+        {
+          "name": "ESPHome",
+          "description": "Gestión y configuración de dispositivos IoT basados en microcontroladores.",
+          "url": "https://esphome.io/",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infraestructura y administración",
+      "description": "Herramientas para gestionar, publicar, supervisar y mantener los servicios del HomeLab.",
+      "services": [
+        {
+          "name": "Homepage",
+          "description": "Panel central desde el que consultar y acceder a los servicios desplegados.",
+          "url": "https://gethomepage.dev/",
+          "featured": true
+        },
+        {
+          "name": "Portainer",
+          "description": "Administración centralizada de contenedores y hosts Docker.",
+          "url": "https://www.portainer.io/",
+          "featured": true
+        },
+        {
+          "name": "Nginx Proxy Manager",
+          "description": "Proxy inverso para centralizar el acceso web y la gestión de certificados.",
+          "url": "https://nginxproxymanager.com/",
+          "featured": true
+        },
+        {
+          "name": "Beszel",
+          "description": "Monitorización ligera del estado y consumo de recursos de los hosts.",
+          "url": "https://www.beszel.dev/",
+          "featured": true
+        },
+        {
+          "name": "Pi-hole",
+          "description": "Servidor DNS local con filtrado de publicidad y dominios no deseados.",
+          "url": "https://pi-hole.net/",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Datos y servicios internos",
+      "description": "Componentes de persistencia, caché, extracción de contenido y procesamiento utilizados por las aplicaciones.",
+      "services": [
+        {
+          "name": "MariaDB",
+          "description": "Base de datos relacional utilizada por diferentes servicios.",
+          "url": "https://mariadb.org/",
+          "featured": false
+        },
+        {
+          "name": "PostgreSQL",
+          "description": "Base de datos relacional para aplicaciones que requieren persistencia avanzada.",
+          "url": "https://www.postgresql.org/",
+          "featured": false
+        },
+        {
+          "name": "Redis y Valkey",
+          "description": "Servicios de caché, colas y almacenamiento temporal para aplicaciones.",
+          "url": "https://valkey.io/",
+          "featured": false
+        },
+        {
+          "name": "Gotenberg",
+          "description": "Conversión y procesamiento de documentos dentro del entorno de gestión documental.",
+          "url": "https://gotenberg.dev/",
+          "featured": false
+        },
+        {
+          "name": "Apache Tika",
+          "description": "Extracción de texto y metadatos de documentos.",
+          "url": "https://tika.apache.org/",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "technologies": [
+    "Linux",
+    "Docker",
+    "Docker Compose",
+    "Raspberry Pi",
+    "Nginx",
+    "Reverse Proxy",
+    "MariaDB",
+    "PostgreSQL",
+    "Redis",
+    "Valkey",
+    "DNS",
+    "Redes",
+    "Monitorización",
+    "Automatización",
+    "Self-Hosting"
+  ],
+  "capabilities": [
+    {
+      "title": "Despliegue reproducible",
+      "description": "Organización de los servicios mediante contenedores y archivos Docker Compose para facilitar su mantenimiento y recuperación."
+    },
+    {
+      "title": "Infraestructura multi-host",
+      "description": "Distribución de servicios entre un servidor principal y un nodo auxiliar de bajo consumo."
+    },
+    {
+      "title": "Administración centralizada",
+      "description": "Gestión de contenedores y supervisión de los hosts desde herramientas centralizadas."
+    },
+    {
+      "title": "Persistencia de datos",
+      "description": "Uso de volúmenes y bases de datos independientes para conservar la información entre actualizaciones y recreaciones de contenedores."
+    },
+    {
+      "title": "Publicación de servicios",
+      "description": "Centralización del acceso web mediante proxy inverso, evitando exponer detalles internos de la infraestructura."
+    },
+    {
+      "title": "Monitorización",
+      "description": "Seguimiento del estado de los hosts y servicios para detectar problemas de disponibilidad o consumo de recursos."
+    },
+    {
+      "title": "Automatización",
+      "description": "Creación de flujos e integraciones para reducir tareas manuales y conectar diferentes aplicaciones."
+    },
+    {
+      "title": "Aprendizaje continuo",
+      "description": "Entorno real para experimentar con nuevas aplicaciones, actualizaciones, migraciones y soluciones self-hosted."
+    }
+  ],
+  "principles": [
+    "No publicar secretos, credenciales ni direcciones privadas",
+    "Mantener los datos persistentes separados de los contenedores",
+    "Documentar configuraciones y cambios relevantes",
+    "Actualizar los servicios de forma controlada",
+    "Priorizar herramientas abiertas y autoalojadas",
+    "Evitar dependencias innecesarias de servicios externos"
+  ],
+  "roadmap": [
+    {
+      "title": "Documentación del laboratorio",
+      "description": "Centralizar la arquitectura, configuraciones y procedimientos de mantenimiento sin almacenar información sensible.",
+      "status": "En progreso"
+    },
+    {
+      "title": "Copias de seguridad verificadas",
+      "description": "Mejorar la estrategia de copias de seguridad y comprobar periódicamente los procedimientos de restauración.",
+      "status": "Planificado"
+    },
+    {
+      "title": "Control de versiones",
+      "description": "Mantener configuraciones, scripts y documentación reutilizable en un repositorio privado.",
+      "status": "Planificado"
+    },
+    {
+      "title": "Mejora de la observabilidad",
+      "description": "Ampliar la supervisión de disponibilidad, recursos y estado de los servicios.",
+      "status": "En evolución"
+    }
+  ]
+}
