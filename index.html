@@ -13,19 +13,31 @@
 
 <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
+
     <header class="site-header">
         <nav class="nav wrap">
-            <a class="brand" href="#top"><span class="brand-mark">LD</span><span class="brand-text">Portfolio</span></a>
+            <a class="brand" href="#top">
+                <span class="brand-mark">LD</span>
+                <span class="brand-text">Portfolio</span>
+            </a>
+
             <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
+
             <button id="menuToggle" class="icon-button nav-toggle" type="button" aria-label="Abrir menú"
                 aria-expanded="false">☰</button>
+
             <div id="navLinks" class="nav-links">
-                <a href="#about">Bio</a><a href="#timeline">CV</a><a href="#skills">Skills</a><a
-                    href="#homelab">HomeLab</a><a href="#repos">Repos</a><a href="#articles">Artículos</a><a
-                    href="#contact">Contacto</a>
+                <a href="#about">Bio</a>
+                <a href="#timeline">CV</a>
+                <a href="#skills">Skills</a>
+                <a href="#homelab">HomeLab</a>
+                <a href="#repos">Repos</a>
+                <a href="#articles">Artículos</a>
+                <a href="#contact">Contacto</a>
             </div>
         </nav>
     </header>
+
     <main id="main">
         <section id="top" class="hero section">
             <div class="wrap hero-grid">
@@ -36,60 +48,94 @@
                     <p id="profileSummary" class="hero-summary"></p>
                     <div id="profileLinks" class="actions"></div>
                 </div>
+
                 <aside class="hero-card reveal">
                     <img id="profileAvatar" class="profile-avatar" src="./assets/profile.png"
                         alt="Fotografía de Lorenzo del Barrio Leal" />
                     <div id="statusLabel" class="status-pill"></div>
                     <h2>Stack principal</h2>
                     <div id="mainStack" class="chip-list"></div>
+
                     <div class="mini-stats">
-                        <div><strong id="yearsExp">+0</strong><span>años exp.</span></div>
-                        <div><strong id="repoCount">0</strong><span>repos públicos</span></div>
+                        <div>
+                            <strong id="yearsExp">+0</strong>
+                            <span>años exp.</span>
+                        </div>
+                        <div>
+                            <strong id="repoCount">0</strong>
+                            <span>repos públicos</span>
+                        </div>
                     </div>
                 </aside>
             </div>
         </section>
+
         <section id="about" class="section">
             <div class="wrap about-layout">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Sobre mí</p>
                     <h2>Bio</h2>
-                    <p class="muted about-intro">Una visión resumida de mi recorrido, intereses y forma de entender la
-                        automatización.</p>
+                    <p class="muted about-intro">
+                        Una visión resumida de mi recorrido, intereses y forma de entender la automatización.
+                    </p>
                 </div>
+
                 <div class="panel bio-panel reveal">
                     <div id="aboutText" class="rich-text bio-text"></div>
                 </div>
             </div>
         </section>
+
         <section id="timeline" class="section alt">
             <div class="wrap">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Trayectoria</p>
-                    <h2>Timeline</h2>
+                    <h2>Timeline estilo CV</h2>
+                    <p class="muted">
+                        Consulta mi experiencia profesional en esta línea temporal o descarga una copia completa de mi
+                        currículum.
+                    </p>
+
+                    <div class="actions cv-download-actions">
+                        <a class="action-link primary" href="./cv/Lorenzo-del-Barrio-Leal-CV.pdf" target="_blank"
+                            rel="noopener noreferrer">
+                            Descargar CV en PDF
+                        </a>
+
+                        <a class="action-link" href="./cv/Lorenzo-del-Barrio-Leal-CV.html" target="_blank"
+                            rel="noopener noreferrer">
+                            Ver CV en HTML
+                        </a>
+                    </div>
                 </div>
+
                 <div id="timelineList" class="timeline"></div>
             </div>
         </section>
+
         <section id="skills" class="section">
             <div class="wrap">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Conocimiento</p>
                     <h2>Skills, idiomas y formación</h2>
                 </div>
+
                 <div class="skills-grid">
                     <article class="panel reveal">
                         <h3>Hard skills</h3>
                         <div id="hardSkills" class="chip-list"></div>
                     </article>
+
                     <article class="panel reveal">
                         <h3>Soft skills</h3>
                         <div id="softSkills" class="chip-list"></div>
                     </article>
+
                     <article class="panel reveal">
                         <h3>Idiomas</h3>
                         <div id="languages" class="list language-list"></div>
                     </article>
+
                     <article class="panel reveal">
                         <h3>Formación</h3>
                         <div id="studies" class="list"></div>
@@ -97,6 +143,7 @@
                 </div>
             </div>
         </section>
+
         <section id="homelab" class="section alt">
             <div class="wrap">
                 <div class="section-heading reveal">
@@ -104,17 +151,22 @@
                     <h2>HomeLab</h2>
                     <p id="homelabIntro" class="muted"></p>
                 </div>
+
                 <div id="homelabNodes" class="skills-grid"></div>
+
                 <div class="section-heading reveal" style="margin-top:48px">
                     <h3>Servicios desplegados</h3>
                 </div>
+
                 <div id="homelabServices" class="cards-grid"></div>
+
                 <article class="panel reveal" style="margin-top:28px">
                     <h3>Capacidades técnicas</h3>
                     <div id="homelabSkills" class="chip-list"></div>
                 </article>
             </div>
         </section>
+
         <section id="repos" class="section">
             <div class="wrap">
                 <div class="section-heading reveal">
@@ -124,6 +176,7 @@
                 <div id="repoList" class="cards-grid"></div>
             </div>
         </section>
+
         <section id="articles" class="section alt">
             <div class="wrap">
                 <div class="section-heading reveal">
@@ -133,33 +186,53 @@
                 <div id="articleList" class="cards-grid"></div>
             </div>
         </section>
+
         <section id="contact" class="section">
             <div class="wrap contact-grid">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Contacto</p>
                     <h2>¿Hablamos?</h2>
-                    <p class="muted about-intro">¿Tienes alguna pregunta o quieres hablar sobre un proyecto? No dudes en
-                        contactarme.</p>
-                    <p class="muted about-intro">También puedes escribirme directamente a <a
-                            href="mailto:barrioleal1994@gmail.com">barrioleal1994@gmail.com</a></p>
+                    <p class="muted about-intro">
+                        ¿Tienes alguna pregunta o quieres hablar sobre un proyecto? No dudes en contactarme.
+                    </p>
+                    <p class="muted about-intro">
+                        También puedes escribirme directamente a
+                        <a href="mailto:barrioleal1994@gmail.com">barrioleal1994@gmail.com</a>
+                    </p>
                 </div>
+
                 <form id="contactForm" class="panel contact-form reveal"
-                    action="https://formsubmit.cloud/f/963c7093-b423-49fd-bd15-e28757074e08/" method="POST"><input
-                        type="text" name="_gotcha" style="display:none" tabindex="-1"
-                        autocomplete="off" /><label>Nombre<input name="name" required /></label><label>Email<input
-                            name="email" type="email" required /></label><label>Mensaje<textarea name="message" rows="6"
-                            required></textarea></label><button class="primary-button" type="submit">Enviar
-                        mensaje</button>
+                    action="https://formsubmit.cloud/f/963c7093-b423-49fd-bd15-e28757074e08/" method="POST">
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+                    <label>
+                        Nombre
+                        <input name="name" required />
+                    </label>
+
+                    <label>
+                        Email
+                        <input name="email" type="email" required />
+                    </label>
+
+                    <label>
+                        Mensaje
+                        <textarea name="message" rows="6" required></textarea>
+                    </label>
+
+                    <button class="primary-button" type="submit">Enviar mensaje</button>
                     <p id="formStatus" class="form-status"></p>
                 </form>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="wrap">
             <p>© <span id="year"></span> <span id="footerName">Lorenzo</span></p>
         </div>
     </footer>
+
     <script src="./config.js"></script>
     <script src="./script.js"></script>
 </body>

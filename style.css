@@ -758,3 +758,26 @@ a.chip:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--accent) 40%, transparent);
   outline-offset: 3px;
 }
+
+.cv-download-actions {
+  margin-top: 22px;
+}
+
+.cv-download-actions .action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .cv-download-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cv-download-actions .action-link {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
