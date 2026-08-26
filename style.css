@@ -554,14 +554,20 @@ label {
 
 input,
 textarea {
-    width: 100%;
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 13px 15px;
-    background: var(--bg);
-    color: var(--text);
-    font: inherit;
-    line-height: 1.45
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 13px 15px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.45;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
 }
 
 [data-theme="light"] input,
@@ -732,4 +738,23 @@ pre code {
         width: 132px;
         height: 132px
     }
+}
+a.chip {
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+a.chip:hover,
+a.chip:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+a.chip:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  outline-offset: 3px;
 }

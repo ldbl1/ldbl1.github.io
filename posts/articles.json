@@ -1,5 +1,18 @@
 [
   {
+    "title": "Mi HomeLab: servicios propios con Docker y Linux",
+    "summary": "Arquitectura, decisiones y aprendizajes detrás de mi infraestructura doméstica multi-host con más de 20 contenedores.",
+    "date": "2026-08-26",
+    "tags": [
+      "HomeLab",
+      "Docker",
+      "Linux",
+      "self-hosting"
+    ],
+    "url": "./posts/mi-homelab-docker.html",
+    "external": false
+  },
+  {
     "title": "Docker sin dolor: contenedores útiles para proyectos reales",
     "summary": "Una guía práctica sobre cómo uso Docker para aislar entornos, documentar dependencias y facilitar despliegues reproducibles.",
     "date": "2026-06-30",

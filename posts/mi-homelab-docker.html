@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mi HomeLab · Lorenzo del Barrio Leal</title>
+    <meta name="description" content="Arquitectura y servicios del HomeLab de Lorenzo del Barrio Leal.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav wrap"><a class="brand" href="../index.html"><span class="brand-mark">LD</span><span
+                    class="brand-text">Portfolio</span></a><a class="action-link"
+                href="../index.html#articles">Volver</a></nav>
+    </header>
+    <main class="section">
+        <article class="wrap article-layout">
+            <p class="eyebrow">HomeLab · Docker · Linux</p>
+            <h1>Mi HomeLab: servicios propios con Docker y Linux</h1>
+            <p class="hero-summary">Un laboratorio doméstico convertido en un entorno real para aprender, crear y
+                mantener servicios útiles.</p>
+            <div class="panel rich-text">
+                <h2>El objetivo</h2>
+                <p>Mi HomeLab nació con una idea sencilla: seguir aprendiendo fuera del entorno profesional y disponer
+                    de servicios privados para mi familia sin depender siempre de plataformas externas. Con el tiempo se
+                    ha convertido en una infraestructura multi-host donde practico administración Linux, Docker, redes,
+                    automatización, monitorización y mantenimiento.</p>
+                <h2>Arquitectura</h2>
+                <h3>ServerLorodo</h3>
+                <p>El nodo principal utiliza un Intel Core i7-3770 y 16 GB de RAM. Aloja la mayor parte de las
+                    aplicaciones, bases de datos y componentes auxiliares mediante contenedores Docker.</p>
+                <h3>PiLorodo</h3>
+                <p>Una Raspberry Pi 3B+ funciona como nodo auxiliar de bajo consumo. Mantiene servicios esenciales de
+                    red, como Pi-hole, además de agentes de administración y monitorización.</p>
+                <h2>Servicios</h2>
+                <p>La infraestructura incluye nube privada con Nextcloud, gestión documental con Paperless-ngx,
+                    fotografía con Immich, multimedia con Jellyfin y Navidrome, automatización con n8n, domótica con
+                    ESPHome y administración con Portainer, Homepage y Beszel.</p>
+                <p>Los servicios utilizan componentes de persistencia y procesamiento como MariaDB, PostgreSQL, Redis,
+                    Valkey, Gotenberg y Apache Tika.</p>
+                <h2>Qué practico con este proyecto</h2>
+                <ul>
+                    <li>Despliegue y mantenimiento con Docker Compose.</li>
+                    <li>Administración de sistemas Linux y arquitectura multi-host.</li>
+                    <li>Persistencia de datos y operación de bases de datos.</li>
+                    <li>Proxy inverso, DNS local y organización del acceso a servicios.</li>
+                    <li>Monitorización, health checks y diagnóstico de incidencias.</li>
+                    <li>Actualizaciones controladas, copias de seguridad y documentación.</li>
+                    <li>Automatización de flujos con n8n.</li>
+                </ul>
+                <h2>Un proyecto en evolución</h2>
+                <p>El HomeLab no es una instalación cerrada. Lo trato como un producto personal: pruebo servicios,
+                    documento cambios, reviso actualizaciones y mejoro progresivamente la seguridad, la observabilidad y
+                    la capacidad de recuperación.</p>
+                <p>No publico direcciones, credenciales ni detalles internos de acceso. La información mostrada se
+                    centra en la arquitectura y en los aprendizajes técnicos.</p>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="wrap">
+            <p>© <span id="year"></span> Lorenzo del Barrio Leal.</p>
+        </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear(); document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";</script>
+</body>
+
+</html>

@@ -5,18 +5,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lorenzo del Barrio Leal · Automation Tech Lead</title>
-    <meta name="description" content="Portfolio de Lorenzo del Barrio Leal" />
+    <meta name="description"
+        content="Portfolio de Lorenzo del Barrio Leal: automatización, Power Platform, desarrollo y HomeLab." />
+    <link rel="icon" type="image/png" href="./assets/profile.png" />
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body><a class="skip-link" href="#main">Saltar al contenido</a>
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
     <header class="site-header">
-        <nav class="nav wrap"><a class="brand" href="#top"><span class="brand-mark">LD</span><span
-                    class="brand-text">Portfolio</span></a><button id="themeToggle" class="icon-button"
-                type="button">☾</button><button id="menuToggle" class="icon-button nav-toggle" type="button">☰</button>
-            <div id="navLinks" class="nav-links"><a href="#about">Bio</a><a href="#timeline">CV</a><a
-                    href="#skills">Skills</a><a href="#repos">Repos</a><a href="#articles">Artículos</a><a
-                    href="#contact">Contacto</a></div>
+        <nav class="nav wrap">
+            <a class="brand" href="#top"><span class="brand-mark">LD</span><span class="brand-text">Portfolio</span></a>
+            <button id="themeToggle" class="icon-button" type="button" aria-label="Cambiar tema">☾</button>
+            <button id="menuToggle" class="icon-button nav-toggle" type="button" aria-label="Abrir menú"
+                aria-expanded="false">☰</button>
+            <div id="navLinks" class="nav-links">
+                <a href="#about">Bio</a><a href="#timeline">CV</a><a href="#skills">Skills</a><a
+                    href="#homelab">HomeLab</a><a href="#repos">Repos</a><a href="#articles">Artículos</a><a
+                    href="#contact">Contacto</a>
+            </div>
         </nav>
     </header>
     <main id="main">
@@ -29,8 +36,9 @@
                     <p id="profileSummary" class="hero-summary"></p>
                     <div id="profileLinks" class="actions"></div>
                 </div>
-                <aside class="hero-card reveal"><img id="profileAvatar" class="profile-avatar"
-                        src="./assets/profile.png" alt="Avatar" />
+                <aside class="hero-card reveal">
+                    <img id="profileAvatar" class="profile-avatar" src="./assets/profile.png"
+                        alt="Fotografía de Lorenzo del Barrio Leal" />
                     <div id="statusLabel" class="status-pill"></div>
                     <h2>Stack principal</h2>
                     <div id="mainStack" class="chip-list"></div>
@@ -58,7 +66,7 @@
             <div class="wrap">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Trayectoria</p>
-                    <h2>Timeline estilo CV</h2>
+                    <h2>Timeline</h2>
                 </div>
                 <div id="timelineList" class="timeline"></div>
             </div>
@@ -89,7 +97,25 @@
                 </div>
             </div>
         </section>
-        <section id="repos" class="section alt">
+        <section id="homelab" class="section alt">
+            <div class="wrap">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Infraestructura personal</p>
+                    <h2>HomeLab</h2>
+                    <p id="homelabIntro" class="muted"></p>
+                </div>
+                <div id="homelabNodes" class="skills-grid"></div>
+                <div class="section-heading reveal" style="margin-top:48px">
+                    <h3>Servicios desplegados</h3>
+                </div>
+                <div id="homelabServices" class="cards-grid"></div>
+                <article class="panel reveal" style="margin-top:28px">
+                    <h3>Capacidades técnicas</h3>
+                    <div id="homelabSkills" class="chip-list"></div>
+                </article>
+            </div>
+        </section>
+        <section id="repos" class="section">
             <div class="wrap">
                 <div class="section-heading reveal">
                     <p class="eyebrow">GitHub</p>
@@ -98,7 +124,7 @@
                 <div id="repoList" class="cards-grid"></div>
             </div>
         </section>
-        <section id="articles" class="section">
+        <section id="articles" class="section alt">
             <div class="wrap">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Ideas</p>
@@ -107,17 +133,21 @@
                 <div id="articleList" class="cards-grid"></div>
             </div>
         </section>
-        <section id="contact" class="section alt">
+        <section id="contact" class="section">
             <div class="wrap contact-grid">
                 <div class="section-heading reveal">
                     <p class="eyebrow">Contacto</p>
                     <h2>¿Hablamos?</h2>
-                    <p class="muted about-intro">¿Tienes alguna pregunta o quieres hablar sobre un proyecto? ¡No dudes en contactarme!</p>
-                    <p class ="muted about-intro">También puedes escribirme directamente a <a href="mailto:barrioleal1994@gmail.com">barrioleal1994@gmail.com</a></p>
+                    <p class="muted about-intro">¿Tienes alguna pregunta o quieres hablar sobre un proyecto? No dudes en
+                        contactarme.</p>
+                    <p class="muted about-intro">También puedes escribirme directamente a <a
+                            href="mailto:barrioleal1994@gmail.com">barrioleal1994@gmail.com</a></p>
                 </div>
-                <form id="contactForm" class="panel contact-form reveal" action="https://formsubmit.cloud/f/963c7093-b423-49fd-bd15-e28757074e08/" method="POST"><input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" /><label>Nombre<input name="name"
-                            required /></label><label>Email<input name="email" type="email"
-                            required /></label><label>Mensaje<textarea name="message" rows="6"
+                <form id="contactForm" class="panel contact-form reveal"
+                    action="https://formsubmit.cloud/f/963c7093-b423-49fd-bd15-e28757074e08/" method="POST"><input
+                        type="text" name="_gotcha" style="display:none" tabindex="-1"
+                        autocomplete="off" /><label>Nombre<input name="name" required /></label><label>Email<input
+                            name="email" type="email" required /></label><label>Mensaje<textarea name="message" rows="6"
                             required></textarea></label><button class="primary-button" type="submit">Enviar
                         mensaje</button>
                     <p id="formStatus" class="form-status"></p>
@@ -127,7 +157,7 @@
     </main>
     <footer class="footer">
         <div class="wrap">
-            <p>© <span id="year"></span> <span id="footerName">Lorenzo</span>.</p>
+            <p>© <span id="year"></span> <span id="footerName">Lorenzo</span></p>
         </div>
     </footer>
     <script src="./config.js"></script>
