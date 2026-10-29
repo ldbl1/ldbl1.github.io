@@ -10,12 +10,14 @@ window.PORTFOLIO_CONFIG = {
   homelab: { localFile: "./data/homelab.json" },
   repos: {
     featuredOnly: true,
-    include: ["dwSongs", "ldbl1.github.io", "dockdwsongs"],
+    include: ["dwSongs", "ldbl1.github.io", "dockdwsongs","homelab-public"],
     exclude: [], excludeForks: true, excludeArchived: true, max: 9, sortBy: "updated",
     manualDescriptions: {
       dwSongs: "Aplicación de escritorio escrita en Python para descargar música desde YouTube.",
       "ldbl1.github.io": "Portfolio personal de Lorenzo del Barrio Leal.",
-      dockdwsongs: "Versión dockerizada de dwSongs con integración con la API de Jellyfin."
+      dockdwsongs: "Versión dockerizada de dwSongs con integración con la API de Jellyfin.",
+      "homelab-public": "Repositorio público con información de mi homelab y scripts de automatización."
+
     },
     tags: {}
   },
